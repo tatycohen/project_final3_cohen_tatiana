@@ -130,6 +130,10 @@ nav a:hover{
 	font-size: 1.2em;
 }
 
+#menu{
+	display: none;
+}
+
 .logo{
 	max-width: 200px;
 	margin: 0 auto;
@@ -201,3 +205,4 @@ footer{
 	font-size: 0.8em;
 	text-align: center;
 }
+
