@@ -18,6 +18,7 @@ body{
 	margin: 0 auto;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
+	border: 1px;
 }
 
 h1{
@@ -25,6 +26,32 @@ h1{
 	color: #ec2434;
 	font-weight: lighter;
 	margin-top: 0px;
+	text-align: center;
+  	line-height: 0.5;
+  	text-align: center;
+}
+h1 span {
+  display: inline-block;
+  position: relative;  
+}
+h1 span:before,
+h1 span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #ec2434 ;
+  border-top: 1px solid #ec2434;
+  top: 0;
+  width: 600px;
+  margin-top: 5px;
+}
+h1 span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+h1 span:after {
+  left: 100%;
+  margin-left: 15px;
 }
 
 h2{
@@ -73,6 +100,7 @@ img{
 
 iframe{
 	width: 100%;
+	border: 3px solid #FFF;
 }
 
 nav{
@@ -90,10 +118,12 @@ nav li{
 	border-bottom: 1px solid #FFF;
 }
 
-nav a , a:link, a:visited{
+nav a , nav a:link, nav a:visited{
 	color: #FFF;
 	text-decoration: none;
 	font-size: 1em;
+	font-family: Open Sans;
+	text-transform: uppercase;
 }
 
 nav a:hover{
@@ -101,15 +131,35 @@ nav a:hover{
 }
 
 .logo{
-	max-width: 250px;
+	max-width: 200px;
 	margin: 0 auto;
 	padding-top: 30px;
 }
 
 section{
 	padding: 20px;
-	background-color: #eaeaea;
+	clear: both;
+	overflow: hidden;
+	
 }
+
+
+#events{
+	background-color: #FAD73B;
+}
+	#events ul li{
+		background-color: #FFF;
+		padding: 0 15px;
+		margin-bottom: 10px;
+		border-radius: 10px;
+		border: 2px solid #000000;
+	}
+
+	#events ul li li{
+		padding: 0;
+		margin: 0;
+		border: 0;
+	}
 
 .price{
 	margin: 0;
@@ -119,4 +169,35 @@ section{
 	float: left;
 	width: 50%;
 	text-shadow: -2px 0 #B4774B, 0 2px #B4774B, 2px 0 #B4774B, 0 -2px #B4774B;
+}
+
+.white{
+	color: #FFF;
+	font-weight: bold;
+}
+
+.award{
+	border: 0;
+	width: 40%;
+	float: left;
+	padding-left: 20px;
+	padding-bottom: 50px;
+}
+
+
+
+.address{
+	margin-top: 10px;
+}
+
+.address p{
+	margin: 0;
+}
+
+footer{
+	background-color: #B4774B;
+	color: #FFF;
+	padding: 10px;
+	font-size: 0.8em;
+	text-align: center;
 }
