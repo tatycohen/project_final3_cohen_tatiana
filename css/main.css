@@ -1,0 +1,122 @@
+@font-face {
+    font-family: ITCBold;
+    src: url(../fonts/itc-fenice-lt-bold.ttf);
+}
+
+@font-face {
+    font-family: ITCOblique;
+    src: url(../fonts/itc-fenice-lt-oblique.ttf);
+}
+
+@font-face {
+    font-family: ITCRegular;
+    src: url(../fonts/itc-fenice-lt-regular.ttf);
+}
+
+body{
+	max-width: 980px;
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+h1{
+	font-family: ITCBold;
+	color: #ec2434;
+	font-weight: lighter;
+	margin-top: 0px;
+}
+
+h2{
+	font-family: ITCRegular;
+	color: #b4774b;
+	font-weight: lighter;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+a:link{
+	color: #ec2434;
+	font-family: ITCOblique;
+	font-weight: lighter;
+}
+
+a:hover{
+	font-family: ITCRegular;
+	color: #b4774b;
+	font-weight: lighter;
+	text-decoration: none;
+} 
+
+a:active{
+	color: #ec2434;
+}
+
+a:visited{
+	color: #ec2434;
+}
+
+img{
+	width: 100%;
+	border: 2px solid #FFF;
+}
+
+.button {
+	border: 0;
+	width: 50%;
+	float:right;
+	padding: 10px 0;
+}
+
+iframe{
+	width: 100%;
+}
+
+nav{
+	background-color: #B4774B;
+	padding: 0;
+}
+
+nav ul{
+	margin: 0;
+	padding-left: 0;
+}
+
+nav li{
+	padding: 10px;
+	border-bottom: 1px solid #FFF;
+}
+
+nav a , a:link, a:visited{
+	color: #FFF;
+	text-decoration: none;
+	font-size: 1em;
+}
+
+nav a:hover{
+	font-size: 1.2em;
+}
+
+.logo{
+	max-width: 250px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+section{
+	padding: 20px;
+	background-color: #eaeaea;
+}
+
+.price{
+	margin: 0;
+	font-size: 2em;
+	font-weight:bold;
+	color: #FFF;
+	float: left;
+	width: 50%;
+	text-shadow: -2px 0 #B4774B, 0 2px #B4774B, 2px 0 #B4774B, 0 -2px #B4774B;
+}
