@@ -87,13 +87,13 @@ a:visited{
 }
 
 img{
-	width: 100%;
+	max-width: 100%;
 	border: 2px solid #FFF;
 }
 
 .button {
 	border: 0;
-	width: 50%;
+	width: 60%;
 	float:right;
 	padding: 10px 0;
 }
@@ -151,18 +151,12 @@ section{
 #events{
 	background-color: #FAD73B;
 }
-	#events ul li{
+	#events article{
 		background-color: #FFF;
 		padding: 0 15px;
-		margin-bottom: 10px;
+		margin-top: 10px;
 		border-radius: 10px;
-		border: 2px solid #000000;
-	}
-
-	#events ul li li{
-		padding: 0;
-		margin: 0;
-		border: 0;
+		border: 2px solid #666666;
 	}
 
 .price{
@@ -171,7 +165,7 @@ section{
 	font-weight:bold;
 	color: #FFF;
 	float: left;
-	width: 50%;
+	width: 40%;
 	text-shadow: -2px 0 #B4774B, 0 2px #B4774B, 2px 0 #B4774B, 0 -2px #B4774B;
 }
 
@@ -180,12 +174,17 @@ section{
 	font-weight: bold;
 }
 
+#awards ul{
+	width: 80%;
+	margin: 0 auto;
+}
+
 .award{
 	border: 0;
 	width: 40%;
 	float: left;
 	padding-left: 20px;
-	padding-bottom: 50px;
+	max-width: 200px;
 }
 
 
@@ -204,5 +203,42 @@ footer{
 	padding: 10px;
 	font-size: 0.8em;
 	text-align: center;
+}
+
+@media (min-width: 600px){
+
+	h1{
+		text-align: left;
+	}
+
+	figure{
+		width: 55%;
+		float: left;
+		padding-right: 20px;
+	}
+
+	.order{
+		width: 40%;
+		float: right;
+	}
+
+	.centered{
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#events article{
+		width: 40%;
+		float: left;
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+
+	.award{
+		margin-left: 10px;
+	}
+
+
 }
 
