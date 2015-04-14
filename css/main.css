@@ -13,7 +13,12 @@
     src: url(../fonts/itc-fenice-lt-regular.ttf);
 }
 
+html{
+	background: url(../img/bg.png);
+}
+
 body{
+	background-color: #FFF;
 	max-width: 980px;
 	margin: 0 auto;
 	font-family: 'Open Sans', sans-serif;
@@ -141,9 +146,11 @@ nav a:hover{
 }
 
 section{
+	margin: 50px 0;
 	padding: 20px;
 	clear: both;
 	overflow: hidden;
+
 	
 }
 
@@ -197,6 +204,12 @@ section{
 	margin: 0;
 }
 
+.event-poster{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
 footer{
 	background-color: #B4774B;
 	color: #FFF;
@@ -207,9 +220,6 @@ footer{
 
 @media (min-width: 600px){
 
-	h1{
-		text-align: left;
-	}
 
 	figure{
 		width: 55%;
@@ -220,12 +230,6 @@ footer{
 	.order{
 		width: 40%;
 		float: right;
-	}
-
-	.centered{
-		width: 90%;
-		margin: 0 auto;
-		text-align: center;
 	}
 
 	#events article{
@@ -239,6 +243,37 @@ footer{
 		margin-left: 10px;
 	}
 
+
+}
+
+@media (min-width: 900px){
+
+
+	#events article{
+		width: 20%;
+		float: left;
+		margin-right: 10px;
+		margin-left: 30px;
+	}
+
+	.event-poster{
+		width: 40%;
+		float: left;
+		padding-right: 20px;
+	}
+
+	#awards ul{
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	figure{
+		width: 40%;
+	}
+
+	h1{
+		padding-bottom: 20px;
+	}
 
 }
 
