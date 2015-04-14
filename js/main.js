@@ -20,10 +20,7 @@ $( document ).ready(function() {
 	});
 
 
-    $('.button').hover(
-          function(){this.src = this.src.replace("button","button-hover");},
-          function(){this.src = this.src.replace("button-hover","button");
-     });
+    
 
 
 	// Call Gridder
@@ -44,7 +41,10 @@ $( document ).ready(function() {
 	        }
 	    });
 
-
+	$('.button').hover(
+          function(){this.src = this.src.replace("button","button-hover");},
+          function(){this.src = this.src.replace("button-hover","button");
+     });
 	
 	
 
