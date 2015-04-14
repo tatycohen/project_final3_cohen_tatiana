@@ -10,17 +10,22 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/slicknav.css" />
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script src="js/smooth-scroll.min.js"></script>
+<script src="js/jquery.scrollUp.js"></script>
+<script src="js/jquery.gridder.js"></script>
+<script src="js/main.js"></script>
 </head>
 <body>
 	<header>
 		<nav>
 			<ul id="menu">
 				<li><a data-scroll href="#our-story">Our Story</a></li>
-				<li><a data-scroll href="#soup-day">Soup of the Day</a></li>
+				<li><a data-scroll href="#soup-day">Soup du Jour</a></li>
 				<li><a data-scroll href="#events">Soup4U Events</a></li>
 				<li><a data-scroll href="#awards">Awards</a></li>
-				<li><a href="our-soups.html">Our Soups</a></li>
+				<li><a data-scroll href="#our-soups">Our Soups</a></li>
 				<li><a data-scroll href="#contact">Contact</a></li>
 			</ul>
 		</nav>
@@ -35,7 +40,7 @@
 		<p>Nothing has changed. Our small-batch soups are still made with the craft and relentless pursuit of excellence that defines perfectionism and creates legends. As the New York Times said, Al creates “Art, not soup.” Now, that liquid perfection is available three ways, at our food truck events, at supermarkets, and right here, on our website.</p>
 	</section>
 	<section id="soup-day">
-		<h1><span>Soup of the Day</span></h1>
+		<h1><span>Soup du Jour</span></h1>
 		<figure><img src="img/soups/tortilla.png"></figure>
 		<h2>Tortilla Soup!</h2>
 		<p>This soup is a simple, yet popular weeknight favorite that will never disappoint on a chilly winter evening.
@@ -44,6 +49,39 @@
 			<p class="price">$6.99</p>
 			<a href="#"><img id="button" src="img/button.png" alt="No Soup for You!"></a>
 		</div>
+	</section>
+	<section id="our-soups">
+		<h1><span>Our Soups</span></h1>
+		<!-- Gridder navigation -->
+		<ul class="gridder">
+		    <li class="gridder-list" data-griddercontent="#content1">
+		        <img src="img/soups/bacon-ranch-potato.jpg" />
+		    </li>
+		    <li class="gridder-list" data-griddercontent="#content2">
+		        <img src="http://placehold.it/600x400" />
+		    </li>
+		    <li class="gridder-list" data-griddercontent="#content3">
+		        <img src="http://placehold.it/600x400" />
+		    </li>
+		</ul>
+
+		<!-- Gridder content -->
+		<artcle id="content1" class="gridder-content"> 
+			 <figure><img src="img/soups/bacon-ranch-potato.jpg" /></figure>
+			 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			 proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+			 <div class="order">
+			<p class="price">$6.99</p>
+			<a href="#"><img id="button" src="img/button.png" alt="No Soup for You!"></a>
+		</div>
+		</article>
+		<div id="content2" class="gridder-content"> Content goes here... </div>
+		<div id="content3" class="gridder-content"> Content goes here... </div>
+
 	</section>
 	<section id="events">
 		<h1><span>Soup4U Events</span></h1>
@@ -107,11 +145,7 @@
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="js/jquery.slicknav.min.js"></script>
-<script src="js/smooth-scroll.min.js"></script>
-<script src="js/jquery.scrollUp.js"></script>
-<script src="js/main.js"></script>
+
 
 
 </body>
