@@ -1,6 +1,5 @@
 $( document ).ready(function() {
     
-
     $('#menu').slicknav({
 		prependTo:'nav'
 	});
@@ -20,6 +19,24 @@ $( document ).ready(function() {
 	  });
 	});
 
+	// Call Gridder
+	    $('.gridder').gridderExpander({
+	        scroll: true,
+	        scrollOffset: 30,
+	        scrollTo: "panel", // panel or listitem
+	        animationSpeed: 400,
+	        animationEasing: "easeInOutExpo",
+	        onStart: function(){
+	            console.log("Gridder Inititialized");
+	        },
+	        onContent: function(){
+	            console.log("Gridder Content Loaded");
+	        },
+	        onClosed: function(){
+	            console.log("Gridder Closed");
+	        }
+	    });
+
     var button = document.getElementById("button");
 	button.addEventListener("mouseover" , swap , false);
 	button.addEventListener("mouseout" , swapBack , false);
@@ -33,6 +50,9 @@ $( document ).ready(function() {
 		console.log("back");
 		button.src = "img/button.png";
 	}
+
+
+	
 	
 
 });
