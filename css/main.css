@@ -96,7 +96,7 @@ img{
 	border: 2px solid #FFF;
 }
 
-#button {
+.button {
 	border: 0;
 	width: 60%;
 	float:right;
