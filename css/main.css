@@ -235,7 +235,7 @@ section{
 }
 
 .gridder-list{
-	max-width:35%;
+	width:35%;
 	padding: 10px 10px 0;
 	border: 1px solid #eaeaea;
 	margin-left: 10px;
@@ -313,6 +313,15 @@ footer{
     border-radius: 5px;
 }
 
+
+@media (min-width: 450px){
+
+	.gridder-list{
+		width:40%;
+	}
+
+}
+
 @media (min-width: 600px){
 
 
@@ -336,6 +345,11 @@ footer{
 
 	.award{
 		margin-left: 10px;
+	}
+
+	.gridder-list{
+		margin-left: 15px;
+
 	}
 
 
@@ -393,6 +407,22 @@ footer{
 
 	nav li:last-child{
 		border-right:0;
+	}
+
+	.gridder-show{
+		display:block;
+		float:left;
+		width:95%;
+		position:relative;
+	}
+
+	.gridder-list{
+		width:20%;
+		padding: 10px 10px 0;
+		border: 1px solid #eaeaea;
+		margin-left: 10px;
+		margin-top: 20px;
+
 	}
 
 }
