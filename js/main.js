@@ -1,9 +1,11 @@
 $( document ).ready(function() {
     
+    // Responsive Nav
     $('#menu').slicknav({
 		prependTo:'nav'
 	});
 
+    // Smooth Scroll
 	 smoothScroll.init();
 
     $(function () {
@@ -20,27 +22,26 @@ $( document ).ready(function() {
 	});
 
 
-    
-
-
 	// Call Gridder
-	    $('.gridder').gridderExpander({
-	        scroll: true,
-	        scrollOffset: 30,
-	        scrollTo: "panel", // panel or listitem
-	        animationSpeed: 400,
-	        animationEasing: "easeInOutExpo",
-	        onStart: function(){
-	            console.log("Gridder Inititialized");
-	        },
-	        onContent: function(){
-	            console.log("Gridder Content Loaded");
-	        },
-	        onClosed: function(){
-	            console.log("Gridder Closed");
-	        }
-	    });
+    $('.gridder').gridderExpander({
+        scroll: true,
+        scrollOffset: 30,
+        scrollTo: "panel", // panel or listitem
+        animationSpeed: 400,
+        animationEasing: "easeInOutExpo",
+        onStart: function(){
+            console.log("Gridder Inititialized");
+        },
+        onContent: function(){
+            console.log("Gridder Content Loaded");
+        },
+        onClosed: function(){
+            console.log("Gridder Closed");
+        }
+    });
 
+
+    // Button hover
 	$('.button').hover(
           function(){this.src = this.src.replace("button","button-hover");},
           function(){this.src = this.src.replace("button-hover","button");
